@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Property</title>
+    <!-- This called internal styling -->
+    <style>
+        /* h1{
+            color: #3d3db9;
+        }
+         */
+         /* using IDs to select something */
+         /* using grouping to select ids and classes */
+        #firstHeading,.sameStyling{
+            color: brown;
+        }
+        #randomText{
+            color: lightblue;
+        }
+        /* using class to select */
+        /* .sameStyling{
+            color: chocolate;
+        } */
+
+        #first p{
+            color: crimson;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+</head>
+<body>
+    <h1 id="firstHeading">This the heading</h1>
+    <p id="randomText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dignissimos repellendus facere cumque, cum voluptatem quisquam natus odit mollitia. Voluptatibus.</p>
+    <h1 class="sameStyling">This is another heading</h1>
+    <h2 class="sameStyling">this the third heading</h2>
+    <br />
+
+    <!-- descendant selectors -->
+     <div id="first">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, necessitatibus?
+        </p>
+     </div>
+     <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc6sAbVVPuy4FTEA_qpZr-sYx2Hh84TKlxTXXzn7CuESUMM9ZeQUfsTmEV1G-7l_hs2bX9QdXr4DnlU6_aMTVsEJQ70NaEMxYPPT77hTBRLw&s=10" width="100px" alt="no images">
+    <img src="./bill2.jpg" width="100px" height="100px" alt="no images">
+    <picture>
+        <source media="(min-width: 100px)" srcset="./bill2.jpg" /> 
+        <source media="(min-width: 100px)" srcset="./bill2.jpg" /> 
+        <img src="./bill2.jpg" width="100px" alt="" >
+    </picture>
+
+    <!-- image map generator -->
+     <img src="bill.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="one()" target="" alt="" title="" href="" coords="27,257,207,389" shape="rect">
+    </map>
+
+    <script>
+        function one(){
+            alert("You clicked on one")
+        }
+    </script>
+</body>
+</html>

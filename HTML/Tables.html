@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even){
+            background-color: #b9b9b9;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: red;" />
+        </colgroup>
+        <tr>
+            <th>Country</th>
+            <th>Country Code</th>
+            <th>Email</th>
+        </tr> 
+        <tr>
+            <td>Pakistan</td>
+            <td>PK</td>
+            <td>pakistan@gmail.gov.pk</td>
+        </tr>
+        <tr>
+            <td>United States of America</td>
+            <td>USA</td>
+            <td>usa@gmail.gov.pk</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>CN</td>
+            <td>cn@gmail.gov.pk</td>
+        </tr>
+        <tr> 
+            <td>Japan</td>
+            <td>JP</td>
+            <td>jp@gmail.gov.pk</td>
+        </tr>
+    </table>
+    
+    <br />
+    <table style="width: auto;">
+        <tr>
+            <th colspan="2">Country</th>
+            <th>India</th>
+            <th>Japan</th>
+            <th>Pakistan</th>
+        </tr>
+        <tr>
+            <th>Code</th>
+            <th>IN</th>
+            <th>JP</th>
+            <th>PK</th>
+        </tr>
+    </table>
+    <br />
+
+    <table style="width: 100;">
+        <caption>
+            Monthly Maintenance Breakdown
+        </caption>
+        <thead style="background-color: #6464b4; color: #ffff;">
+            <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">KE Bill</th>
+                <td>50,000</td>
+            </tr>
+            <tr>
+                <th scope="row">KWSB Bill</th>
+                <td>20,000</td>
+            </tr>
+            <tr>
+                <th scope="row">Repair</th>
+                <td>80,000</td>
+            </tr>
+            <tr>
+                <th scope="row">Salaries</th>
+                <td>80,000</td>
+            </tr>
+        </tbody>
+        <tfoot style="background-color: #6464b4; color: #ffff;">
+            <tr>
+                <th scope="row">Totals</th>
+                <td>2,30000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br />
+    <table style="width: auto;">
+        <tr>
+            <th>Student Roll no.</th>
+            <th>Student Name</th>
+            <th>Departement</th>
+        </tr>
+        <tr>
+            <td>24F-CS-192</td>
+            <td>Syed Muhammad Suhaib Hasan</td>
+            <td>Computer Science</td>
+        </tr>
+        <tr>
+            <td>24F-CS-198</td>
+            <td>Areesha Pervaiz</td>
+            <td>Computer Science</td>
+        </tr>
+        <tr>
+            <td>24F-CS-185</td>
+            <td>Muhammad Ibrahim Sohail</td>
+            <td>Computer Science</td>
+        </tr>
+        <tr>
+            <td>24F-CS-183</td>
+            <td>Syed Aliza Mubashir</td>
+            <td>Computer Science</td>
+        </tr>
+    </table>
+</body>
+</html>
