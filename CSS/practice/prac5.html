@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: beige;
+            height: 30px;
+        }
+        nav{
+            padding: 5px;
+        }
+        nav a {
+            margin-left: 55px;
+            text-decoration: none;
+            text-align: center;
+            color: brown;
+            padding: 5px;
+
+        }
+        .divs{
+            width: 100px;
+            height: 100px;
+            background-color: seagreen;
+            margin: 5px;
+            color: #ffffff;
+            text-align: center;
+            display: inline-block;
+        }
+        #div-one{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: seagreen;
+            text-align: center;
+            position:fixed;
+            right: 10%;
+            top: 10%;
+        }
+        #box2{
+            z-index: 2;
+            position: absolute;
+        }
+        #container{
+            border: 3px solid black;
+            margin: 5px;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            background-color: aqua;
+        }
+    </style>
+    <title>Display and position</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <div id="div-one">
+        <br>
+            box 1
+        </div>
+        <div id="container">
+            <div class="divs">box 1</div>
+            <div class="divs" id="box2">box2</div>
+            <div class="divs">box 3</div>
+        </div>
+    </main>
+    <footer>
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore odit nobis vel doloremque tenetur, error, iure tempore minima est reprehenderit inventore quisquam repellendus dolor in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla et omnis ab quibusdam soluta eum aliquid saepe maiores. Natus cumque atque debitis beatae explicabo qui vero iure tempora repudiandae quod.
+    </footer>
+</body>
+</html>
