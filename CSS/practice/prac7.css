@@ -1,0 +1,28 @@
+#progress-container{
+    height: 25px;
+    width: 90%;
+    background-color:crimson;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    left: 5%;
+}
+
+.progress-bar{
+    background-color: blanchedalmond;
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+    animation-name: fill;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+
+@keyframes fill {
+    from{width: 0%;}
+    to{width: 100%;}
+}
