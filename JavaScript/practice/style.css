@@ -1,0 +1,18 @@
+#btn1{
+  background-color: lightgreen;
+  border: none;
+  padding: 5px 15px; 
+  border-radius: 25px;
+}
+
+#btn2{
+  padding: 2px 25px 2px 25px;
+  border-color: black;
+  border-radius: 8px;
+}
+
+#btn3{
+  border-color: black;
+  border-radius: 8px;
+  padding: 3px 15px;
+}

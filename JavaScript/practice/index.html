@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>JS With HTML & CSS</title>
+</head>
+<body>
+  <!-- <button>Click</button>
+  <hr> -->
+  <button class="btns" id="btn1" onclick="cartQuantity++;
+    document.querySelector('#cart-summary').innerText = `Your bag has ${cartQuantity} items`;"
+  >Add to Bag</button>
+
+  <button class="btns" id="btn2" onclick="cartQuantity--;
+    document.querySelector('#cart-summary').innerText = `Your bag has ${cartQuantity} items`;">Move to Wishlist</button>
+  
+  <button class="btns" id="btn3"
+  onclick="cartQuantity+=2;
+    document.querySelector('#cart-summary').innerText = `Your bag has ${cartQuantity} items`;">
+      Add 1+1 Sale Item 
+  </button>
+  <!-- <hr>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, quidem?</p> -->
+
+  <h1 id="cart-summary">
+    Your bag has 0  items
+  </h1>
+
+  <script>
+    let cartQuantity = 0;
+    document.querySelector('#cart-summary').innerText = `Your bag has ${cartQuantity} items`;
+  </script>
+</body>
+</html>
