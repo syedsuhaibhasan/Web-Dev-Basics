@@ -15,7 +15,9 @@
 }
 
 #main-div{
-  left: 20px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
   width: 200px;
   display: flexbox;
   flex-wrap: wrap;
