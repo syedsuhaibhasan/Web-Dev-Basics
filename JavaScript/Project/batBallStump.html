@@ -36,6 +36,12 @@
   </div>
 
   <script>
+    let score = {
+      win: 0,
+      lost: 0,
+      tie: 0,
+    };
+
     function optionSelector() {
       let number = Math.random()*3;
       return number;
@@ -56,40 +62,48 @@
     function getResult(userChoice,computerChoice){
     if(userChoice==='bat'){
       if(computerChoice==='ball'){
-      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence you WON`);
+      score.win++;
+      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence you WON \n YOUR SCORE:`+`\n Win: ${score.win} Lost: ${score.lost} Tie: ${score.tie}`);
       }
       else if(computerChoice==='bat'){
-      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence its a TIE!`);
+      score.tie++;
+      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence its a TIE! \n YOUR SCORE:`+`\n Win: ${score.win} Lost: ${score.lost} Tie: ${score.tie}`);
       }
       else{
-      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence you LOSE`);
+      score.lost++;
+      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence you LOSE \n YOUR SCORE:`+`\n Win: ${score.win} Lost: ${score.lost} Tie: ${score.tie}`);
       }
     }
 
     if (userChoice==='ball') {
       if(computerChoice==='ball'){
-      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence its a TIE`);
+        score.tie++;
+      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence its a TIE \n YOUR SCORE:`+`\n Win: ${score.win} Lost: ${score.lost} Tie: ${score.tie}`);
     }
     else if(computerChoice==='bat'){
-      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence you LOSE`);
+      score.lost++;
+      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence you LOSE \n YOUR SCORE:`+`\n Win: ${score.win} Lost: ${score.lost} Tie: ${score.tie}`);
     }
     else{
-      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence you WON`);
+      score.tie++;
+      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence you WON \n YOUR SCORE:`+`\n Win: ${score.win} Lost: ${score.lost} Tie: ${score.tie}`);
       }
     }
 
     if (userChoice==='stump') {
       if(computerChoice==='ball'){
-      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence you LOSE`);
+        score.lose++;
+      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence you LOSE \n YOUR SCORE:`+`\n Win: ${score.win} Lost: ${score.lost} Tie: ${score.tie}`);
     }
     else if(computerChoice==='bat'){
-      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence you WON`);
+      score.win++;
+      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence you WON \n YOUR SCORE:`+`\n Win: ${score.win} Lost: ${score.lost} Tie: ${score.tie}`);
     }
     else{
-      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence its a TIE!`);
+      score.tie++;
+      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence its a TIE! \n YOUR SCORE`+`\n Win: ${score.win} Lost: ${score.lost} Tie: ${score.tie}`);
     }
     }
-
     }
   </script>
 </body>
