@@ -18,47 +18,20 @@
     let computerChoice;
     randomNumber = optionSelector();
     computerChoice=botChoice(randomNumber);
-
-    if(computerChoice==='ball'){
-      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence you WON`);
-    }
-    else if(computerChoice==='bat'){
-      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence its a TIE!`);
-    }
-    else{
-      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence you LOSE`);
-    }
+    getResult('bat',computerChoice);
     ">Bat</button>
 
     <button onclick="
     let randomNumber;
     randomNumber = optionSelector();
     computerChoice=botChoice(randomNumber);
-
-    if(computerChoice==='ball'){
-      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence its a TIE`);
-    }
-    else if(computerChoice==='bat'){
-      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence you LOSE`);
-    }
-    else{
-      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence you WON`);
-    }
+    getResult('ball',computerChoice);
     ">Ball</button>
 
     <button onclick="
     randomNumber = optionSelector();
     computerChoice=botChoice(randomNumber);
-
-    if(computerChoice==='ball'){
-      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence you LOSE`);
-    }
-    else if(computerChoice==='bat'){
-      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence you WON`);
-    }
-    else{
-      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence its a TIE!`);
-    }
+    getResult('stump',computerChoice);
     ">Stump</button>
   </div>
 
@@ -78,6 +51,45 @@
       computerChoice = 'stump';
       }
       return computerChoice;
+    }
+
+    function getResult(userChoice,computerChoice){
+    if(userChoice==='bat'){
+      if(computerChoice==='ball'){
+      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence you WON`);
+      }
+      else if(computerChoice==='bat'){
+      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence its a TIE!`);
+      }
+      else{
+      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence you LOSE`);
+      }
+    }
+
+    if (userChoice==='ball') {
+      if(computerChoice==='ball'){
+      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence its a TIE`);
+    }
+    else if(computerChoice==='bat'){
+      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence you LOSE`);
+    }
+    else{
+      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence you WON`);
+      }
+    }
+
+    if (userChoice==='stump') {
+      if(computerChoice==='ball'){
+      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence you LOSE`);
+    }
+    else if(computerChoice==='bat'){
+      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence you WON`);
+    }
+    else{
+      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence its a TIE!`);
+    }
+    }
+
     }
   </script>
 </body>
