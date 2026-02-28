@@ -16,91 +16,69 @@
   <div class="btn-container">
     <button onclick="
     let computerChoice;
-    console.log('You have chosen ball');
-    randomNumber = Math.random()*3;
-    computerChoice;
-    if(randomNumber>0 && randomNumber<=1) {
-      computerChoice = 'bat';
-    // console.log('Computer choice is bat');
-      }
-    else if(randomNumber>1 && randomNumber<=2){
-      computerChoice = 'ball';
-      // console.log('Computer choice is ball');
-    }else{
-      computerChoice = 'stump';
-      // console.log('Computer choice is stump');
-    }
-    console.log(`Computer choice is ${computerChoice}`);
+    randomNumber = optionSelector();
+    computerChoice=botChoice(randomNumber);
 
     if(computerChoice==='ball'){
-      console.log('You won');
+      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence you WON`);
     }
     else if(computerChoice==='bat'){
-      console.log('TIE!');
+      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence its a TIE!`);
     }
     else{
-      console.log('You lose');
+      alert(`Computer Choice is ${computerChoice} and User Choice is bat hence you LOSE`);
     }
     ">Bat</button>
 
     <button onclick="
-    console.log('You have chosen bat');
-    let randomNumber = Math.random()*3;
-    if(randomNumber>0 && randomNumber<=1) {
-      computerChoice = 'bat';
-    // console.log('Computer choice is bat');
-      }
-    else if(randomNumber>1 && randomNumber<=2){
-      computerChoice = 'ball';
-      // console.log('Computer choice is ball');
-    }else{
-      computerChoice = 'stump';
-      // console.log('Computer choice is stump');
-    }
-    console.log(`Computer choice is ${computerChoice}`);
+    let randomNumber;
+    randomNumber = optionSelector();
+    computerChoice=botChoice(randomNumber);
 
     if(computerChoice==='ball'){
-      console.log('TIE!');
+      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence its a TIE`);
     }
     else if(computerChoice==='bat'){
-      console.log('You lose!');
+      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence you LOSE`);
     }
     else{
-      console.log('You won');
+      alert(`Computer Choice is ${computerChoice} and User Choice is ball hence you WON`);
     }
     ">Ball</button>
 
     <button onclick="
-    console.log('You have chosen Stump');
-    randomNumber = Math.random()*3;
-    computerChoice;
-    if(randomNumber>0 && randomNumber<=1) {
-      computerChoice = 'bat';
-    // console.log('Computer choice is bat');
-      }
-    else if(randomNumber>1 && randomNumber<=2){
-      computerChoice = 'ball';
-      // console.log('Computer choice is ball');
-    }else{
-      computerChoice = 'stump';
-      // console.log('Computer choice is stump');
-    }
-    console.log(`Computer choice is ${computerChoice}`);
+    randomNumber = optionSelector();
+    computerChoice=botChoice(randomNumber);
 
     if(computerChoice==='ball'){
-      console.log('You lose');
+      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence you LOSE`);
     }
     else if(computerChoice==='bat'){
-      console.log('You Won!');
+      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence you WON`);
     }
     else{
-      console.log('TIE');
+      alert(`Computer Choice is ${computerChoice} and User Choice is Stumps hence its a TIE!`);
     }
     ">Stump</button>
   </div>
 
   <script>
-    
+    function optionSelector() {
+      let number = Math.random()*3;
+      return number;
+    }
+
+    function botChoice(randomNumber) {
+      if(randomNumber>0 && randomNumber<=1) {
+      computerChoice = 'bat';
+      }
+      else if(randomNumber>1 && randomNumber<=2){
+      computerChoice = 'ball';
+      }else{
+      computerChoice = 'stump';
+      }
+      return computerChoice;
+    }
   </script>
 </body>
 </html>
