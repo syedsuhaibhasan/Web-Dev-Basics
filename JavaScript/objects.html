@@ -7,21 +7,40 @@
 </head>
 <body>
   <script>
-    let product = {
-      company:"Mango",
-      price: 861,
-      'item-name':"T-shirt",
-    };
-    console.log(product);
-    console.log(product['item-name']);
+    // let product = {
+    //   company:"Mango",
+    //   price: 861,
+    //   'item-name':"T-shirt",
+    // };
+    // console.log(product);
+    // console.log(product['item-name']);
     
-    //modifying JSON
-    product.company="kela";
-    console.log(product);
+    // //modifying JSON
+    // product.company="kela";
+    // console.log(product);
 
-    //Deleting
-    delete procduct.company;
-    console.log(product);
-  </script>
+    // //Deleting
+    // delete product.company;
+    // console.log(product);
+
+    //methods in objects
+    let car = {
+      "car-name":"Cultus",
+      model:2010,
+      tires:4,
+      price:900000,
+      displayPrice: function() {
+        console.log(`Price of the car is PKR ${this.price}`);
+      }
+    };
+    car.displayPrice();
+    //destructuring object
+    let {model} = car;
+    console.log(model);
+
+    //AUTO BOXING
+    //conversion of primitives in to objects to use methods on them
+    // console.log("My name is syed muhammad suhaib hasan".replace("syed muhammad", "S.M"));
+</script>
 </body>
 </html>
