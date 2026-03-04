@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let product={
+      name:"Remote Control car",
+      wheels:"four",
+      body:"plastic",
+      type:"sedan",
+      "delivery-time":"10 minutes",
+      message:"hello",
+      status:"done",
+    };
+    let {message,status}=product;
+    console.log(message);
+    console.log(status);
+    console.log(product);
+   
+  let obj1={number:8}; 
+  let obj2 = {};
+  obj2=obj1;
+  console.log(obj2);
+  obj1.number=4;
+  console.log(obj2);
+  console.log(obj1.number===obj2.number);
+  </script>
+</body>
+</html>
