@@ -7,6 +7,15 @@
     body{
       text-align: center;
     }
+    .images{
+      height: 75px;
+      border-radius: 50px;
+    }
+    .btn{
+      border-radius: 50px;
+      background-color: darkolivegreen;
+      border: 2px solid black;
+    }
   </style>
   <title>Bat Ball Stump Game</title>
 </head>
@@ -14,27 +23,22 @@
   <h1>Bat Ball Stump Game</h1>
   
   <div class="btn-container">
-    <button onclick=" let computerChoice = generateComputerChoice();
+    <button class="btn" onclick=" let computerChoice = generateComputerChoice();
     let resultMsg = getResult('Bat', computerChoice);
     showResult('Bat', computerChoice, resultMsg);
-    ">Bat</button>
+    "><img class="images" src="./bat.jpg" alt="bat image"></button>
 
-    <button onclick="
+    <button class="btn" onclick="
     computerChoice = generateComputerChoice();
     resultMsg = getResult('Ball', computerChoice);
     showResult('Ball', computerChoice, resultMsg);
-    ">Ball</button>
+    "><img class="images" src="./ball.jpeg" alt="ball image"></button>
 
-    <button onclick="
+    <button class="btn" onclick="
     computerChoice = generateComputerChoice();
     resultMsg = getResult('Stump', computerChoice);
     showResult('Stump', computerChoice, resultMsg);
-    ">Stump</button>
-
-    <button onclick="localStorage.clear();
-      resetScore();">
-      Reset
-    </button>
+    "><img class="images" src="./download1.png" alt="stumps image"></button>
   </div>
 
   <h3 id="User-move"></h3>
@@ -116,7 +120,11 @@
       document.querySelector('#score').innerText = `${score.displayScore()}`
        
       // alert(`You have chosen ${userMove} \n Computer have chosen ${computerMove} \n ${result} \n${score.displayScore()}`);
-    }    
+    }   
   </script>
+  <button onclick="localStorage.clear();
+      resetScore();">
+      Reset
+    </button>
 </body>
 </html>
