@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .odd{
+            background-color: brown;
+        }
+        .even{
+            background-color: burlywood;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <button id="my-button" onclick="btnpress();">0</button>
+    <script>
+        let noOfTimeClicked = localStorage.getItem('current-number') || 0;
+        function btnpress(){
+        noOfTimeClicked++;
+        localStorage.setItem('current-number',noOfTimeClicked);
+        updatebtn();
+    }
+
+    function updatebtn(){
+        let button = document.querySelector('#my-button');
+        if (noOfTimeClicked%2==0) {
+            button.classList.remove('odd');
+            button.classList.add('even');
+        }else{
+            button.classList.remove('even');
+            button.classList.add('odd');
+        }
+        button.innerText=noOfTimeClicked;
+    }
+    updatebtn();
+    </script>
+</body>
+</html>
