@@ -9,7 +9,25 @@ function addTask(){
         savedTask: task,
         deadline: date,
     }
+
     localStorage.setItem(`tasks`,JSON.stringify(tasks));
-    let label = document.createElement('label');
+    const taskContainer = document.createElement('div');
     
+    const taskText = document.createElement('span');
+    task.innerText = task;
+
+    const taskDate = document.createElement('small');
+    taskDate.innerText = date;
+
+    const dltBtn = document.createElement('button');
+    dltBtn.innerText = "Delete";
+
+    taskContainer.appendChild(taskText);
+    taskContainer.appendChild(taskDate);
+    taskContainer.appendChild(dltBtn);
+
+    document.querySelector('.task-list').appendChild(taskContainer);
+    
+    document.querySelector('.new-task').value = "";
+    document.querySelector('.date').value = "";
 }
