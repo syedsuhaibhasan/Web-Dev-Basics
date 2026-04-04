@@ -39,16 +39,15 @@ function displayItem() {
      let newHtml = '';
      for (let i = 0; i < todoList.length; i++) {
         newHtml += `
-        <div>
-            <span>${todoList[i]}  ${dates[i]}</span>
-            <button  
+            <span>${todoList[i]}</span>
+            <span>${dates[i]}</span>
+            <button class="delete-btn"
                 onclick="todoList.splice(${i},1);
-                        dates.splice(${i},1)
+                        dates.splice(${i},1);
                         displayItem();
-                        ;">Delete</button>
-        </div>
+                        ">Delete</button>        
         `;
-
+        // document.querySelector('.delete-btn').classList.add('dlt-btn');
         displayElement.innerText = displayElement.innerText + dates[i] + todoList[i] + "\n";
     }
     displayElement.innerHTML = newHtml;
