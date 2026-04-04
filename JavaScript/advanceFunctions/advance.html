@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Functions</title>
+</head>
+<body>
+    <script>
+        //Anonymous Functions
+
+        // let sum = function (num1,num2) {
+        //     return num1+num2;
+        // }
+        // // console.log(newSum(4,5));
+
+        // //(4+5) +7
+        // let threeNumSum = function (num1,num2,num3,sumTwoNumbers) {
+        //     let sum1 = sumTwoNumbers(num1, num2);
+        //     return sumTwoNumbers(sum1,num3);
+        // }
+        // console.log(threeNumSum(5,6,4,sum));
+
+        //Arrow Functions / Lambda functions
+        let sum = (num1,num2) => {return num1+num2};
+        let sum2 = (num1,num2) =>  num1+num2;
+        let square = num =>  num*num;
+
+        console.log(sum(4,5));
+        console.log(sum2(4,5));
+        console.log(square(4));
+    </script>
+</body>
+</html>
