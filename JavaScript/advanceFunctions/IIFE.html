@@ -7,9 +7,14 @@
 </head>
 <body>
     <script>
-        ( ()=>{
-            sohaib();
-        })();
+        //IIFE creates its own private scope. Variables inside it are invisible to the outside world
+        //preventing form global scope pollution
+        ( (name)=>{
+            // sohaib();
+            console.log(name);
+        })("sohaib git repo");
+        //params can be passed in upper bracked and arguments are passed in lower bracket!
+
         function sohaib(){
             console.log(`myself sohaib`);
         }
