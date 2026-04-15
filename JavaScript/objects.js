@@ -51,10 +51,19 @@
       "roll-no":"24F-CS-192",
       "Departement":"Computer Science"
     }
-    
-// optional chaining
+
+  // optional chaining
     console.log(newObj.fullname?.lastname.caste);
 
+  // combining objects
+  const firstName = {1:"Syed ",2:"Muhammad "}
+  const LastName = {3:"Suhaib ",4:"Hasan "}
+
+  // const fullName = Object.assign({},firstName,LastName);
+  // spread operator used mostly
+  const fullName = {...firstName,...LastName}
+  console.log(fullName);
+  
     //AUTO BOXING
     //conversion of primitives in to objects to use methods on them
     // console.log("My name is syed muhammad suhaib hasan".replace("syed muhammad", "S.M"));
