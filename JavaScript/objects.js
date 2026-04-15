@@ -34,12 +34,27 @@
     console.log(model);
     console.log(car);
 
-    //singleton objecy
+    //singleton object
     const gamer = new Object();
     gamer.id = "pat-xxx";
     gamer.lastLogin = "2025-01-01"
     gamer.isloggedin = true;
+
+    const newObj = {
+      "fullname":{
+        "firstname":"Syed Muhammad",
+        "lastname": {
+          "name": "Suhaib Hasan",
+          "caste": "Syed"
+        }
+      },
+      "roll-no":"24F-CS-192",
+      "Departement":"Computer Science"
+    }
     
+// optional chaining
+    console.log(newObj.fullname?.lastname.caste);
+
     //AUTO BOXING
     //conversion of primitives in to objects to use methods on them
     // console.log("My name is syed muhammad suhaib hasan".replace("syed muhammad", "S.M"));
