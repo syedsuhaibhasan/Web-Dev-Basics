@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immediatly Invoked Function Expressions(IIFE)</title>
+</head>
+<body>
+    <script>
+        //IIFE creates its own private scope. Variables inside it are invisible to the outside world
+        //preventing form global scope pollution
+        ( (name)=>{
+            // sohaib();
+            console.log(name);
+        })("sohaib git repo");
+        //params can be passed in upper bracked and arguments are passed in lower bracket!
+
+        function sohaib(){
+            console.log(`myself sohaib`);
+        }
+    </script>
+</body>
+</html>
