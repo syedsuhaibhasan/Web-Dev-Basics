@@ -33,6 +33,12 @@
     let {model} = car;
     console.log(model);
     console.log(car);
+
+    //singleton objecy
+    const gamer = new Object();
+    gamer.id = "pat-xxx";
+    gamer.lastLogin = "2025-01-01"
+    gamer.isloggedin = true;
     
     //AUTO BOXING
     //conversion of primitives in to objects to use methods on them
