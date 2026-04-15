@@ -30,7 +30,7 @@
     car.model = 2026;
     car.displayPrice();
     //destructuring object
-    let {model} = car;
+    const {model,tires} = car;
     console.log(model);
     console.log(car);
 
@@ -64,6 +64,28 @@
   const fullName = {...firstName,...LastName}
   console.log(fullName);
   
+  const users = [
+    {
+      uid:"1234",
+      "name":"karmai",
+    },
+    {
+      uid:"1934",
+      "name":"iman"
+    },
+    {
+      uid:"1834",
+      "name":"kamran",
+    },
+    {
+      uid:"1534",
+      "name":"zubair",
+    },
+  ]
+
+  console.log(users[1].uid)
+  console.log(Object.keys(users))
+  console.log(Object.values(users))
     //AUTO BOXING
     //conversion of primitives in to objects to use methods on them
     // console.log("My name is syed muhammad suhaib hasan".replace("syed muhammad", "S.M"));
