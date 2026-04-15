@@ -14,3 +14,4 @@ const fullName = ["Syed","Muhammad","Sarmad","Hasan"];
 for (const key in fullName) {
    console.log(fullName[key]);
 }
+
