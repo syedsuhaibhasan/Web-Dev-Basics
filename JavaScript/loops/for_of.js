@@ -28,7 +28,8 @@ const obj = {
     'name3':"Suhaib ",
     'name4':"Hasan"
 }
-
+// forof loop won't work for Objects
 for (const [key,value] of obj) {
     console.log(key,value);
 }
+
