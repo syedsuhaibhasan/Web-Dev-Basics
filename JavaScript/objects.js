@@ -30,8 +30,8 @@
     car.model = 2026;
     car.displayPrice();
     //destructuring object
-    const {model,tires} = car;
-    console.log(model);
+    const {model,tires,steering=2} = car;
+    console.log(model,tires,steering);
     console.log(car);
 
     //singleton object
@@ -82,10 +82,10 @@
       "name":"zubair",
     },
   ]
-
   console.log(users[1].uid)
   console.log(Object.keys(users))
   console.log(Object.values(users))
-    //AUTO BOXING
-    //conversion of primitives in to objects to use methods on them
-    // console.log("My name is syed muhammad suhaib hasan".replace("syed muhammad", "S.M"));
+
+  //AUTO BOXING
+  //conversion of primitives in to objects to use methods on them
+  // console.log("My name is syed muhammad suhaib hasan".replace("syed muhammad", "S.M"));
