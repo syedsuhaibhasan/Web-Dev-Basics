@@ -148,9 +148,40 @@ const myNumbers = [1,2,3,4,5,6,7,8,9];
 // console.log(newNums);
 
 // reduce
-const myNums = [1,2,3]
-const mytotal = myNums.reduce((acc,currVal) => {
-    return acc+currVal
-},0)
+// const myNums = [1,2,3]
+// const mytotal = myNums.reduce((acc,currVal) => {
+//     return acc+currVal
+// },0)
 
-console.log(mytotal);
+// console.log(mytotal);
+
+const shoppingCart = [
+    {
+        "itemName":"Football",
+        "price":1500,
+        "stock":30
+    },
+    {
+        "itemName":"bat",
+        "price":2000,
+        "stock":30
+    },
+    {
+        "itemName":"ball",
+        "price":30,
+        "stock":30
+    },
+    {
+        "itemName":"racket",
+        "price":5000,
+        "stock":30
+    },
+    {
+        "itemName":"basketball",
+        "price":2500,
+        "stock":30
+    },
+]
+
+const totalPrice = shoppingCart.reduce((acc,item)=>acc + item.price,0)
+console.log(totalPrice);
