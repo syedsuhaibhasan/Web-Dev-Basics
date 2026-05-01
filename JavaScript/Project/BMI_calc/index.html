@@ -7,11 +7,26 @@
     <title>BMI Calculator</title>
 </head>
 <body>
-      <div class="container">
-        <h1  style="
-            background-color: #212121c7;
-            ">BMI CALCULATOR</h1>
-        
+      <div style="color: white;" class="container">
+        <h1>BMI CALCULATOR</h1>
+        <div>
+            Height in CM
+            <input style="background-color: white; margin-left: 10px; margin-top: 40px;" type="number"; placeholder="Enter you height in CM";
+            id="height">
+        </div>
+        <div>
+            Weight in KG
+            <input style="background-color: white; margin-left: 10px;
+            margin-top: 40px;" type="number"; placeholder="Enter you weight in KG";
+            id="weight">
+        </div>
+        <div style="margin-top: 40px;">
+            <span style="margin-top: 40px;
+                    font-weight: 700; color: green; ">Body Mass Index</span>
+            <span id="answer"></span>
+        </div>
+
+        <button id="calc">Calculate</button>
       </div>  
     <script src="./index.js"></script>
 </body>
