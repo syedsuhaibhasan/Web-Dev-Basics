@@ -28,3 +28,5 @@ weight.addEventListener('input',(event)=>{
 height.addEventListener('input',(event)=>{
     heightVal = parseFloat(event.target.value) || 0;
 });
+
+// USE FORMS IN HTML IT WILL BE MORE EASIER
