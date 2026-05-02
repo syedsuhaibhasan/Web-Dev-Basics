@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeouts</title>
+</head>
+<body>
+    <h1>Syed Suhaib Hasan</h1>
+    <button id="stop">
+       stop
+    </button>
+    <script>
+        const saySohaib = function(){
+          document.querySelector('h1').innerHTML = "sohaib developer"
+        };
+        const id = setTimeout(saySohaib,5000);
+        document.querySelector('#stop').addEventListener('click',(event)=>{
+            clearTimeout(id);
+            console.log("STOPPED")
+        }) 
+    </script>
+</body>
+</html>
