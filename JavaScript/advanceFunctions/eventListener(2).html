@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listener</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing Images</h2>
+    <div>
+        <ul id="container">
+            <li><img id="first" width="200px" src="https://images.pexels.com/photos/11711831/pexels-photo-11711831.jpeg" alt="Loading..."></li>
+            <li><img id="second" width="200px" src="https://images.pexels.com/photos/11715850/pexels-photo-11715850.jpeg" alt="Loading..."></li>
+            <li><img id="third" width="200px" src="https://images.pexels.com/photos/32649677/pexels-photo-32649677.jpeg" alt="Loading..."></li>
+            <li><img id="fourth" width="200px" src="https://images.pexels.com/photos/32581543/pexels-photo-32581543.jpeg" alt="Loading..."></li>
+            <li><img id="fifth" width="200px" src="https://images.pexels.com/photos/20032528/pexels-photo-20032528.jpeg" alt="Loading..."></li>
+            <li><img id="sixth" width="200px" src="https://images.pexels.com/photos/15435096/pexels-photo-15435096.jpeg" alt="Loading..."></li>
+            <li><img id="seventh" width="200px" src="https://images.pexels.com/photos/25038792/pexels-photo-25038792.jpeg" alt="Loading..."></li>
+            <li><img id="eighth" width="200px" src="https://images.pexels.com/photos/32689420/pexels-photo-32689420.jpeg" alt="Loading..."></li>
+            <li><img id="nineth" width="200px" src="https://images.pexels.com/photos/8774946/pexels-photo-8774946.jpeg" alt="Loading..."></li>
+            <li><img id="tenth" width="200px" src="https://images.pexels.com/photos/32689417/pexels-photo-32689417.jpeg" alt="Loading..."></li>
+            <li><a id="google" target="_blank" href="https://www.google.com/">Google</a></li>
+        </ul>
+    </div>
+    <script>
+        // document.getElementById('first').onclick = function(){
+        //     alert('first clicked')
+        // }
+    // ------------------> NOTES <-----------------------------
+        // attachEvent()
+        // jQuery - on 
+
+        // type, timeStamp, defaultPrevented
+        // target, toElement, srcElement, currentTarget
+        // clientX, clientY, offSet, screenX, screenY
+        // altKey, ctrlKey, shiftKey, keyCode  
+
+        // best approach
+        // document.getElementById('first').addEventListener('click',(event)=>{
+        //     alert("first clicked");
+        // }, false);
+
+        // Event Bubbling
+        // document.getElementById('container').addEventListener('click',(event)=>{
+        //     alert("container clicked");
+        // }, false);
+
+        // document.getElementById('first').addEventListener('click',(event)=>{
+        //     alert("first clicked");
+        // }, false);
+
+        // Event Capturing
+        // document.getElementById('container').addEventListener('click',(event)=>{
+        //     alert("container clicked");
+        // }, true);
+
+        // document.getElementById('first').addEventListener('click',(event)=>{
+        //     alert("first clicked");
+        // }, true);
+
+        // Stop propagation
+        // document.getElementById('container').addEventListener('click',(event)=>{
+        //     alert("container clicked");
+        //     event.stopPropagation();
+        // }, false);
+
+        // document.getElementById('first').addEventListener('click',(event)=>{
+        //     alert("first clicked");
+        // }, false);
+
+        // document.getElementById('google').addEventListener('click', (event)=>{
+        //     console.log("google clicked");
+        //     event.preventDefault();
+        //     event.stopPropagation();
+        // }, false);
+
+        document.getElementById('container').addEventListener('click',(event)=>{
+            if (event.target.tagName === 'IMG') {
+                let removeIt = event.target.parentNode;
+                removeIt.remove();
+            }
+        }, false)
+    </script>
+</body>
+</html>
