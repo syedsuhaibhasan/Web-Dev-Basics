@@ -6,6 +6,14 @@
     <title>Set Interval</title>
 </head>
 <body>
-    
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+    <script>
+        const sayDate = function(){
+            // console.log("suhaib",Date.now());
+        }
+        const intervalId = setInterval(sayDate, 1000);
+        clearInterval(intervalId);
+    </script>
 </body>
 </html>
