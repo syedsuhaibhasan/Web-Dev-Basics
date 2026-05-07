@@ -1,5 +1,5 @@
 const promiseOne = new Promise(function(resolve, reject){
-//DO an asyn task
+//DO an async task
 //DB Calls, cryptography, network calls
     setTimeout(()=>{console.log("meow gop gop gop");
         resolve();
@@ -23,7 +23,7 @@ new Promise(function(resolve, reject){
 
 const promiseThree = new Promise(function(resolve, reject){
     setTimeout(()=>{
-        resolve({username: "Chai"});
+        resolve({username: "Syed Muhammad Suhaib Hasan"});
     }, 1000)
 })
 
