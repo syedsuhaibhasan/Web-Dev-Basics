@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=thermostat" />
 
     <title>Weather App</title>
 </head>
@@ -15,7 +17,9 @@
         <div class="main-container">
             <div class="search-bar-container">
                 <input id="search-bar" type="text">
-                <span class="material-symbols-outlined">search</span>
+                <span class="material-symbols-outlined">
+search
+</span>
             </div>
             <div class="country-container">
                 <span id="country-name">Pakistan</span>
@@ -23,9 +27,18 @@
                 <div class="date-container">date</div>
             </div>
             <div class="weather-logo">weather logo</div>
-            <div class="temperature">temp</div>
-            <div class="wind-speed">Wind Speed</div>
-            <div class="humidity">Humidity</div>
+            <div class="stats-container">
+                <div class="temperature">
+                    <div style="text-align: center;
+                                ">Temperature
+                        <span class="material-symbols-outlined">thermostat</span>
+                    </div>
+                    
+                    <div id="temp-val">31.26</div>
+                </div>
+                <div class="wind-speed">Wind Speed</div>
+                <div class="humidity">Humidity</div>
+            </div>
             <div class="forecast">
                 <div class="days">mon</div>
                 <div class="days">tues</div>
