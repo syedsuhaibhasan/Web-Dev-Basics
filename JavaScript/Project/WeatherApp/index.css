@@ -58,10 +58,7 @@
 }
 
 .material-symbols-outlined {
-    position: absolute;
-    top: 30%;
-    left: 63%;
-    color: antiquewhite;
+    color: black;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
@@ -82,6 +79,26 @@
     transform: translateX(-50%);
 }
 
+
+#location{
+    position: absolute;
+    top: 1%;
+}
+
+.weather-logo{
+    display: block;       
+    margin-left: auto;    
+    margin-right: auto;   
+    width: 10%;
+    height: 10%;         
+    max-width: 400px;
+    position: absolute;
+    left: 80%;
+    top: 20%;
+    border: 2px black solid;
+    transform: translateX(-50%);
+}
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -90,8 +107,6 @@
   'opsz' 24
 }
 
-#location{
-    position: absolute;
-    top: 1%;
-    
-}
+.temperature{}
+.wind-speed{}
+.humidity{}
