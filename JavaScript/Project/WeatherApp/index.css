@@ -92,16 +92,14 @@
 }
 
 .stats-container{   
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: auto;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
     align-items: center;
     border: 2px solid black;
     width: 70%;
     height: 20%;
-    /* min-width: 60%;          */
-    /* max-width: 400px; */
     position: absolute;
     left: 50%;
     top: 40%;
@@ -111,9 +109,9 @@
 .temperature{   
     text-align: center;
     font-size: 80%;
-    width: 50%;
+    width: 40%;
     height: 50%;
-    margin-left: 12%;
+    margin: 5%;
     border: 2px solid black;   
 }
 .wind-speed{
@@ -121,7 +119,7 @@
     font-size: 80%;
     width: 40%;
     height: 50%;
-    margin-left: 12%;
+    margin: 5%;
     border: 2px solid black;    
 }
 .humidity{
@@ -129,6 +127,6 @@
     font-size: 80%;
     width: 40%;
     height: 50%;
-    margin-left: 12%;
+    margin: 5%;
     border: 2px solid black;  
 }
