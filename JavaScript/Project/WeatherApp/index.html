@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=air,thermostat" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=air,thermostat,water_drop" />
     <link rel="stylesheet" href="./index.css">
     
     <title>Weather App</title>
@@ -14,9 +14,7 @@
         <div class="main-container">
             <div class="search-bar-container">
                 <input id="search-bar" type="text">
-                <span>
-search
-</span>
+                <span>search</span>
             </div>
             <div class="country-container">
                 <span id="country-name">Pakistan</span>
@@ -28,17 +26,27 @@ search
                 <div class="temperature">
                     <div>Temperature
                         <span class="material-symbols-outlined" style="font-size: 15px;
-                        position: absolute;
-                        left: 25%;"
+                        position: absolute;"
                         >thermostat</span>
                     </div>
                     
                     <div id="temp-val">31.26</div>
                 </div>
-                <div class="wind-speed">Wind Speed
-                    <span class="material-symbols-outlined">air</span>
+                <div class="wind-speed">
+                    <div>Wind Speed
+                        <span class="material-symbols-outlined" style="font-size: 15px;
+                        position: absolute;">air</span>
+                    </div>
+
+                    <div id="windSpeed-val">16m/s</div>
                 </div>
-                <div class="humidity">Humidity</div>
+                <div class="humidity">
+                    <div>Humidity
+                        <span class="material-symbols-outlined" style="font-size: 15px;
+                        position: absolute;">water_drop</span>
+                    </div>
+                    <div id="humidity-val">2.6</div>
+                </div>
             </div>
             <div class="forecast">
                 <div class="days">mon</div>
@@ -50,5 +58,6 @@ search
         </div>
        
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>
