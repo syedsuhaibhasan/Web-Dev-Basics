@@ -62,9 +62,9 @@
     display: block;       
     margin-left: auto;    
     margin-right: auto;   
-    width: 80%;
+    /* border: 2px,solid,black; */
+    width: 50%;
     height: 6%;         
-    max-width: 400px;
     position: absolute;
     left: 65%;
     top: 16%;
@@ -77,17 +77,16 @@
     top: 1%;
 }
 
-.weather-logo{
+#weather-icon{
     display: block;       
     margin-left: auto;    
     margin-right: auto;   
     width: 10%;
     height: 10%;         
-    max-width: 400px;
     position: absolute;
     left: 80%;
-    top: 20%;
-    border: 2px black solid;
+    top: 15%;
+    /* border: 2px black solid; */
     transform: translateX(-50%);
 }
 
