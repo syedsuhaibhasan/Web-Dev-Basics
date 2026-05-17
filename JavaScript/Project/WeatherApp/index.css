@@ -96,7 +96,7 @@
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: auto;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     border: 2px solid black;
     width: 70%;
     height: 20%;
@@ -109,13 +109,25 @@
 }
 
 .temperature{   
+    /* position: absolute; */
     text-align: center;
-    font-size: 80%;
+    font-size: 100%;
     width: 50%;
     height: 50%;
     margin-left: 12%;
     border: 2px solid black;   
 }
+
+.material-symbols-outlined {
+    position: relative;
+    top: 1%;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 .wind-speed{
     text-align: center;
     font-size: 80%;
