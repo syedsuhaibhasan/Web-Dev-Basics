@@ -62,9 +62,9 @@
     display: block;       
     margin-left: auto;    
     margin-right: auto;   
-    width: 80%;
+    /* border: 2px,solid,black; */
+    width: 50%;
     height: 6%;         
-    max-width: 400px;
     position: absolute;
     left: 65%;
     top: 16%;
@@ -77,45 +77,56 @@
     top: 1%;
 }
 
-.weather-logo{
+#weather-icon{
     display: block;       
     margin-left: auto;    
     margin-right: auto;   
     width: 10%;
     height: 10%;         
-    max-width: 400px;
     position: absolute;
     left: 80%;
-    top: 20%;
-    border: 2px black solid;
+    top: 15%;
+    /* border: 2px black solid; */
     transform: translateX(-50%);
 }
 
 .stats-container{   
+<<<<<<< HEAD
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: auto;
     justify-content: center;
     /* align-items: center; */
     border: 2px solid black;
+=======
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    /* border: 2px solid black; */
+>>>>>>> 8fbe1c9ca7ca5f62742a883d0c3570cb44402e8b
     width: 70%;
     height: 20%;
-    /* min-width: 60%;          */
-    /* max-width: 400px; */
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 35%;
     transform: translateX(-50%);
 }
 
 .temperature{   
     /* position: absolute; */
     text-align: center;
+<<<<<<< HEAD
     font-size: 100%;
     width: 50%;
+=======
+    font-size: 80%;
+    width: 40%;
+>>>>>>> 8fbe1c9ca7ca5f62742a883d0c3570cb44402e8b
     height: 50%;
-    margin-left: 12%;
-    border: 2px solid black;   
+    margin: 5%;
+    /* border: 2px solid black;    */
 }
 
 .material-symbols-outlined {
@@ -133,14 +144,14 @@
     font-size: 80%;
     width: 40%;
     height: 50%;
-    margin-left: 12%;
-    border: 2px solid black;    
+    margin: 5%;
+    /* border: 2px solid black;     */
 }
 .humidity{
    text-align: center;
     font-size: 80%;
     width: 40%;
     height: 50%;
-    margin-left: 12%;
-    border: 2px solid black;  
+    margin: 5%;
+    /* border: 2px solid black;   */
 }

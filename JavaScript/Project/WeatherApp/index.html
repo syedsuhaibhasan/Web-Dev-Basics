@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./index.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=thermostat" />
+=======
+    
+>>>>>>> 8fbe1c9ca7ca5f62742a883d0c3570cb44402e8b
     <title>Weather App</title>
 </head>
 <body>
@@ -13,23 +18,55 @@
         <div class="main-container">
             <div class="search-bar-container">
                 <input id="search-bar" type="text">
+<<<<<<< HEAD
                 <span >search</span>
+=======
+                <span style="font-size: 2.3rem;
+                position: absolute;
+                top: 10%;
+                left: 60%;"
+                class="material-symbols-outlined">search</span>
+>>>>>>> 8fbe1c9ca7ca5f62742a883d0c3570cb44402e8b
             </div>
             <div class="country-container">
-                <span id="country-name">Pakistan</span>
-                <span id="location"><img src="./images/location.png" alt=""></span>
-                <div class="date-container">date</div>
+                <span id="country-city"></span>
+                <span id="location" class="material-symbols-outlined">location_on</span>
+                <br>
+                <div class="date-container"></div>
             </div>
-            <div class="weather-logo">weather logo</div>
+            <div id="weather-icon">
+                <img id="icon" alt="">
+            </div>
             <div class="stats-container">
                 <div class="temperature">
+<<<<<<< HEAD
                     <div>temperature</div>
                        <span class="material-symbols-outlined">thermostat</span>
+=======
+                    <div>Temperature
+                        <span class="material-symbols-outlined" style="font-size: 15px;
+                        position: absolute;"
+                        >thermostat</span>
+                    </div>
+>>>>>>> 8fbe1c9ca7ca5f62742a883d0c3570cb44402e8b
                     
-                    <div id="temp-val">31.26</div>
+                    <div id="temp-val"></div>
                 </div>
-                <div class="wind-speed">Wind Speed</div>
-                <div class="humidity">Humidity</div>
+                <div class="wind-speed">
+                    <div>Wind Speed
+                        <span class="material-symbols-outlined" style="font-size: 15px;
+                        position: absolute;">air</span>
+                    </div>
+
+                    <div id="windSpeed-val"></div>
+                </div>
+                <div class="humidity">
+                    <div>Humidity
+                        <span class="material-symbols-outlined" style="font-size: 15px;
+                        position: absolute;">water_drop</span>
+                    </div>
+                    <div id="humidity-val"></div>
+                </div>
             </div>
             <div class="forecast">
                 <div class="days">mon</div>
@@ -41,5 +78,6 @@
         </div>
        
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>
