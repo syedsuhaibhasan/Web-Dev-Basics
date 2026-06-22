@@ -16,7 +16,7 @@ async function getresponse() {
         if (!city) {
             return null;
         }
-        const apiKey = '95d574600b4b4d08b74174354260805';
+        const apiKey = 'YOUR_API_KEY';
         const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
         const response = await fetch(url);
         if (!response.ok) {
