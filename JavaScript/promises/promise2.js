@@ -45,6 +45,26 @@ const promiseFive = new Promise(function(resolve, reject){
 });
 
 async function consumePromiseFive() {
-    const response = await promiseFive
+    try {
+        const response = await promiseFive
     console.log(response);
+    } catch (error) {
+        console.log(error);
+        
+    }
 }
+
+consumePromiseFive()
+
+// using fetch api
+async function getUserData() {
+    try {
+        const response = await fetch('https://api.github.com/users/syedsuhaibhasan');
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+getUserData();
